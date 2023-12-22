@@ -17,6 +17,9 @@ Before running a new latency test, both the publisher and subscriber must be syn
 # HOW TO BUILD
 1. Open the command line
 2. Open {platform name}_release folder.
-3. go to build folder
+3. change the directory to 'build' folder
 4. run 'cmake ..' for LINUX or 'cmake .. -G "MSYS Makefiles"' for WINDOWS
 5. run 'make'
+
+# HOW TO RUN
+from the 'build' folder run 'sudo ./iec61850' on LINUX or 'iec61850' on WINDOWS
