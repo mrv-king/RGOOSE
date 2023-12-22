@@ -9,5 +9,13 @@ Before running a new latency test, both the publisher and subscriber must be syn
 2. Install libboost libraries: sudo apt-get install libboost-all-dev
 
 # Prerequisites (WINDOWS)
-1. Install cmake: sudo apt-get install cmake
-2. Install libboost libraries: sudo apt-get install libboost-all-dev
+1. Install cmake by following [this](https://cmake.org/download/) link
+2. Install MSYS2 by following [this](https://www.msys2.org/) link
+3. Install libboost from MSYS2 by following [this](https://packages.msys2.org/package/mingw-w64-x86_64-boost) link
+4. Install libboost libraries: sudo apt-get install libboost-all-dev
+5. Make sure that paths to "cmake" and "make" are specified in the "Path" variable of the Windows environment.
+
+# HOW TO BUILD
+1. Open the command line
+2. Open {platform name}_release folder.
+3. 
