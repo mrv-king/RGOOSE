@@ -3,3 +3,11 @@ This repository contains the source files for creating an IEC61850-related appli
 
 # IMPORTANT
 Before running a new latency test, both the publisher and subscriber must be synchronized. To do this, use third-party PTP server/client applications.
+
+# Prerequisites (LINUX)
+1. Install cmake: sudo apt-get install cmake
+2. Install libboost libraries: sudo apt-get install libboost-all-dev
+
+# Prerequisites (WINDOWS)
+1. Install cmake: sudo apt-get install cmake
+2. Install libboost libraries: sudo apt-get install libboost-all-dev
