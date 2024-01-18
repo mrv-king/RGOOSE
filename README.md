@@ -8,6 +8,7 @@ Before running a new latency test, both the publisher and subscriber must be syn
 Mandatory:
 1. Install cmake: sudo apt-get install cmake
 2. Install libboost libraries: sudo apt-get install libboost-all-dev
+
 Optional:
 - To run ptp server (LINUX), run: sudo ptpd -i eth0 -E -M
 - To run ptp client (LINUX), run: sudo ptpd -i eth0 -E -S
