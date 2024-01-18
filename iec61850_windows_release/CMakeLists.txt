@@ -8,7 +8,7 @@ IF (WIN32)
     FIND_PACKAGE(Python 3.11 COMPONENTS Interpreter Development)
 	
     target_include_directories(iec61850 PUBLIC "${PROJECT_SOURCE_DIR}/headers;${PROJECT_SOURCE_DIR}/winpcap;${Boost_INCLUDE_DIRS}")
-    target_link_libraries(iec61850 PRIVATE ${CMAKE_SOURCE_DIR}/iec61850lib/libIEC61850LIB.dll ${Python_LIBRARIES} -lws2_32)
+    target_link_libraries(iec61850 PRIVATE ${CMAKE_SOURCE_DIR}/iec61850lib/libIEC61850LIB.dll -lws2_32)
 	add_custom_command(TARGET iec61850 POST_BUILD COMMAND ${CMAKE_COMMAND} -E copy ${CMAKE_SOURCE_DIR}/iec61850lib/libIEC61850LIB.dll ${CMAKE_CURRENT_BINARY_DIR}/libIEC61850LIB.dll)
 ENDIF (WIN32)
 
