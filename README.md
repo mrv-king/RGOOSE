@@ -14,10 +14,14 @@ Optional:
 - To run ptp client (LINUX), run: sudo ptpd -i eth0 -E -S
 
 # Prerequisites (WINDOWS)
+Mandatory:
 1. Install cmake by following [this](https://cmake.org/download/) link
 2. Install MSYS2 by following [this](https://www.msys2.org/) link
 3. Install libboost from MSYS2 by following [this](https://packages.msys2.org/package/mingw-w64-x86_64-boost) link
 4. Make sure that paths to "cmake" and "make" are specified in the "Path" variable of the Windows environment.
+
+Optional:
+- Install PTP server/client (one alternative is presented [here](https://timemachinescorp.com/wp-content/uploads/Windows10PTPClient.pdf)).
 
 # HOW TO PREPARE SERVER OR CLIENT APPLICATION
 - Go to the 'source' folder,
