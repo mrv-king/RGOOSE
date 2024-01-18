@@ -35,10 +35,10 @@ To design the client application:
 - specify the IP address of the server. For that, change the second argument in the 'iec61850_publisher' function in line 36. Do not change the port number.
 
 # HOW TO BUILD
-1. Open the command line
-2. Open {platform name}_release folder.
-3. change the directory to 'build' folder
-4. run 'cmake ..' for LINUX or 'cmake .. -G "MSYS Makefiles"' for WINDOWS
+1. Open the command line (terminal)
+2. Open the '{platform name}_release' folder.
+3. change the directory to the 'build' subfolder.
+4. In 'build', run 'cmake ..' for LINUX or 'cmake .. -G "MSYS Makefiles"' for WINDOWS
 5. run 'make'
 
 # HOW TO RUN
