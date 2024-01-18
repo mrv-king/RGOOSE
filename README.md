@@ -4,7 +4,7 @@ This repository contains the source files for creating an IEC61850-related appli
 # IMPORTANT
 Before running a new latency test, both the publisher and subscriber must be synchronized. To do this, use third-party PTP server/client applications. As an option, the "ptpd" tool can be used. To install it, run "sudo apt -y install ptpd" (for LINUX)
 
-# Prerequisites (LINUX)
+# PREREQUISITES (LINUX)
 Mandatory:
 1. Install cmake: sudo apt-get install cmake
 2. Install libboost libraries: sudo apt-get install libboost-all-dev
@@ -13,7 +13,7 @@ Optional:
 - To run ptp server (LINUX), run: sudo ptpd -i eth0 -E -M
 - To run ptp client (LINUX), run: sudo ptpd -i eth0 -E -S
 
-# Prerequisites (WINDOWS)
+# PREREQUISITES (WINDOWS)
 Mandatory:
 1. Install cmake by following [this](https://cmake.org/download/) link
 2. Install MSYS2 by following [this](https://www.msys2.org/) link
