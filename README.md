@@ -19,6 +19,17 @@ Optional:
 3. Install libboost from MSYS2 by following [this](https://packages.msys2.org/package/mingw-w64-x86_64-boost) link
 4. Make sure that paths to "cmake" and "make" are specified in the "Path" variable of the Windows environment.
 
+# HOW TO PREPARE SERVER OR CLIENT APPLICATION
+- Go to the 'source' folder,
+- Open the 'main.cpp' file,
+
+To design the server application:
+- uncomment the 'LINUX/WINDOWS R-GOOSE SUBSCRIBER EXAMPLE' section (section 'LINUX/WINDOWS R-GOOSE PUBLISHER EXAMPLE' should be commented out).
+
+To design the client application:
+- uncomment the 'LINUX/WINDOWS R-GOOSE PUBLISHER EXAMPLE' section (section 'LINUX/WINDOWS R-GOOSE SUBSCRIBER EXAMPLE' should be commented out).
+- specify the IP address of the server. For that, use the line 36 'R_pub iec61850_publisher(io_service, "192.168.10.86", "8080");'. Do not change the port number.
+
 # HOW TO BUILD
 1. Open the command line
 2. Open {platform name}_release folder.
@@ -27,4 +38,4 @@ Optional:
 5. run 'make'
 
 # HOW TO RUN
-from the 'build' folder run 'sudo ./iec61850' on LINUX or 'iec61850' on WINDOWS
+From the 'build' folder run 'sudo ./iec61850' on LINUX or 'iec61850' on WINDOWS. Run the server application first and after that the client.
