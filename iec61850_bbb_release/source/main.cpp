@@ -37,11 +37,11 @@ int main(int argc, char **argv)
 	iec61850_publisher.send_rgoose();
 
     return 0;*/
-	//
+    //
     // ***************************************************************************
     //
 	
-	//
+    //
     // **************  LINUX/WINDOWS R-GOOSE SUBSCRIBER EXAMPLE  *************************
     //
 
