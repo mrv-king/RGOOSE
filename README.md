@@ -28,7 +28,7 @@ To design the server application:
 
 To design the client application:
 - uncomment the 'LINUX/WINDOWS R-GOOSE PUBLISHER EXAMPLE' section (section 'LINUX/WINDOWS R-GOOSE SUBSCRIBER EXAMPLE' should be commented out).
-- specify the IP address of the server. For that, use the line 36 'R_pub iec61850_publisher(io_service, "192.168.10.86", "8080");'. Do not change the port number.
+- specify the IP address of the server. For that, change the second argument in the 'iec61850_publisher' function in line 36. Do not change the port number.
 
 # HOW TO BUILD
 1. Open the command line
@@ -39,3 +39,6 @@ To design the client application:
 
 # HOW TO RUN
 From the 'build' folder run 'sudo ./iec61850' on LINUX or 'iec61850' on WINDOWS. Run the server application first and after that the client.
+
+# HOW TO INTERPRET THE RESULTS
+Whenever the client application connects to the server, it spits out one RGOOSE message. When the server application receives the RGOOSE message it tries to calculate its time latency and, if the attempt is successful, prints the results in seconds. It is the user's responsibility to be sure that two devices (server and client) are properly synchronized and that the communication line between them is stable and robust. Otherwise, the latency test will be incorrect.
