@@ -13,15 +13,12 @@
 #include <sstream>
 #include <cstring>
 #include <fstream>
-
 #include <boost/array.hpp>
 #include <boost/asio.hpp>
 #include <boost/bind/bind.hpp>
-
 #include <chrono>
 #include <stdio.h>
 #include <time.h>
-
 #include <thread>
 #include "goose_header.h"
 #include "r_header.h"
