@@ -2,7 +2,7 @@
 This repository contains the source files for creating an IEC61850-related application (publisher or subscriber) on two different platforms (WINDOWS or LINX). The publisher's goal is to generate a timestamp, integrate it into the R-GOOSE message, and send it to the client over UDP. The goal of the subscriber is to receive a new R-GOOSE message sent by the publisher and calculate its latency (how long it took the message to travel from the publisher to the subscriber). The latency calculation is based on the difference between the two timestamps (publisher and subscribers) generated at the time the R-GOOSE message is sent and received. Latency tests can be performed on different communication networks (wired or wireless). To use the applications provided in the current repository, it is assumed that the communication link between the server and client devices is properly configured and enabled. Using current software, it is possible to perform a latency test over both a wired and wireless connection.  
 
 # IMPORTANT
-Before running a new latency test, both the publisher and subscriber must be synchronized. To do this, use third-party PTP server/client applications. As an option, the "ptpd" tool can be used. To install it, run "sudo apt -y install ptpd" (for LINUX)
+Before running a new latency test, both the publisher and subscriber must be time synchronized. To do this, use third-party PTP server/client applications. As an option, the "ptpd" tool can be used. To install it, run "sudo apt -y install ptpd" (for LINUX)
 
 # PREREQUISITES (LINUX)
 Mandatory:
