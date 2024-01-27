@@ -36,10 +36,9 @@ To design the client application:
 
 # HOW TO BUILD
 1. Open the command line (terminal)
-2. Open the '{platform name}_release' folder.
-3. change the directory to the 'build' subfolder.
-4. In 'build', run 'cmake ..' for LINUX or 'cmake .. -G "MSYS Makefiles"' for WINDOWS
-5. run 'make'
+2. Change directory to the '{platform name}_release/build' folder.
+3. From the 'build' folder, run 'cmake ..' for LINUX or 'cmake .. -G "MSYS Makefiles"' for WINDOWS. Wait while the compilation is over.
+4. run 'make'
 
 # HOW TO RUN
 From the 'build' folder run 'sudo ./iec61850' on LINUX or 'iec61850' on WINDOWS. Run the server application first and after that the client.
