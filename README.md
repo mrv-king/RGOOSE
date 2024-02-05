@@ -19,6 +19,8 @@ Mandatory:
 2. Install MSYS2 by following [this](https://www.msys2.org/) link
 3. Install libboost from MSYS2 by following [this](https://packages.msys2.org/package/mingw-w64-x86_64-boost) link
 4. Make sure that paths to "cmake" and "make" are specified in the "Path" variable of the Windows environment.
+   a. make sure that "path_to_MSYS\msys64\mingw64\include" folder is added
+   b. make sure that "path_to_MSYSC:\msys64\usr\bin" folder is added
 
 Optional:
 - Install PTP server/client (one alternative is presented [here](https://timemachinescorp.com/wp-content/uploads/Windows10PTPClient.pdf)).
