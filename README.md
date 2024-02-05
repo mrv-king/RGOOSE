@@ -44,4 +44,4 @@ To design the client application:
 From the 'build' folder run 'sudo ./iec61850' on LINUX or 'iec61850' on WINDOWS. Run the server application first and after that the client.
 
 # HOW TO INTERPRET THE RESULTS
-Whenever the client application connects to the server, it spits out one RGOOSE message. When the server application receives the RGOOSE message it tries to calculate its time latency and, if the attempt is successful, prints the results in seconds. It is the user's responsibility to be sure that two devices (server and client) are properly time synchronized and that the communication line between them is stable and robust. Otherwise, the latency test will be incorrect.
+Whenever the client application is started, it spits out one RGOOSE message. When the server application receives the RGOOSE message it tries to calculate its time latency and, if the attempt is successful, prints the results in seconds. It is the user's responsibility to be sure that two devices (server and client) are properly time synchronized and that the communication line between them is stable and robust. Otherwise, the latency test will be incorrect.
