@@ -21,6 +21,7 @@ Mandatory:
 4. Make sure that paths to "cmake" and "make" are specified in the "Path" variable of the Windows environment.
    - make sure that "path_to_MSYS\msys64\mingw64\include" folder is added
    - make sure that "path_to_MSYS\msys64\usr\bin" folder is added
+   - make sure that "path to CMAKE\CMake\bin" folder is added
 
 Optional:
 - Install PTP server/client (one alternative is presented [here](https://timemachinescorp.com/wp-content/uploads/Windows10PTPClient.pdf)).
