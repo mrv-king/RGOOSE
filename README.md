@@ -36,7 +36,7 @@ To design the client application:
 
 # HOW TO BUILD
 1. Open the command line (terminal)
-2. Change directory to the '{platform name}_release/build' folder.
+2. Change directory to the '{platform name}_release and create a new 'build' folder.
 3. From the 'build' folder, run 'cmake ..' for LINUX or 'cmake .. -G "MSYS Makefiles"' for WINDOWS. Wait while the compilation is over.
 4. run 'make'
 
