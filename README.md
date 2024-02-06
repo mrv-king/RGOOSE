@@ -26,6 +26,9 @@ Mandatory:
 Optional:
 - Install PTP server/client (one alternative is presented [here](https://timemachinescorp.com/wp-content/uploads/Windows10PTPClient.pdf)).
 
+# Connection to the 5G base station (OPTIONAL)
+Detailed instruction on how connect to the 5G base station using QMI interface is presented [here](https://docs.sixfab.com/page/setting-up-a-data-connection-over-qmi-interface-using-libqmi)
+
 # HOW TO PREPARE SERVER OR CLIENT APPLICATION
 - Go to the 'source' folder,
 - Open the 'main.cpp' file,
