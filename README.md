@@ -66,8 +66,8 @@ Whenever the client application is started, it spits out one RGOOSE message. Whe
 9. Enable "wwan0" interface: sudo ip link set wwan0 up
 10. Initiate registration process in 5G network: sudo qmicli -p -d /dev/cdc-wdm0 --device-open-net='net-raw-ip' --wds-start-network="apn='5gsa.lulea',ip-type=4" --client-no-release-cid
 11. Get an IP address from the network: sudo udhcpc -q -f -i wwan0
-12. On the device that is going to be a server during the latency test check the IP address: ifconfig wwan0
-13. In the "iec61850_rpi_release" directory, go to "source" directory: cd source
+12. On the device that is going to be a server/subscriber during the latency test check the IP address: ifconfig wwan0
+13. In the "iec61850_rpi_release" directory, go to the "source" directory: cd source
 14. Open the 'main.cpp' file: sudo nano main.cpp
    - To design the server application: uncomment the 'LINUX/WINDOWS R-GOOSE SUBSCRIBER EXAMPLE' section (section 'LINUX/WINDOWS R-GOOSE PUBLISHER EXAMPLE' should be commented out).
    - To design the client application: uncomment the 'LINUX/WINDOWS R-GOOSE PUBLISHER EXAMPLE' section (section 'LINUX/WINDOWS R-GOOSE SUBSCRIBER EXAMPLE' should be commented out). Specify the IP address of the server (the one that was shown in step 12). For that, 
