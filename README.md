@@ -60,7 +60,7 @@ Whenever the client application is started, it spits out one RGOOSE message. Whe
    - To run ptpd in master mode : sudo ptpd -i eth0 -E -M
    - To run ptpd in slave mode: sudo ptpd -i eth0 -E -S
 5. In the "iec61850_rpi_release" directory, create new "build" directory: sudo mkdir build
-6. Connect USB 5G modem with Raspberry Pi 4.
+6. Connect USB 5G modem with Raspberry Pi 4 (do that for both client/publisher and server/subscriber devices).
 7. Disable "wwan0" interface: sudo ip link set wwan0 down
 8. Change interface type to "raw_ip": echo 'Y' | sudo tee /sys/class/net/wwan0/qmi/raw_ip
 9. Enable "wwan0" interface: sudo ip link set wwan0 up
