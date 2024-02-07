@@ -27,7 +27,7 @@ Optional:
 - Install PTP server/client (one alternative is presented [here](https://timemachinescorp.com/wp-content/uploads/Windows10PTPClient.pdf)).
 
 # Connection to the 5G base station (OPTIONAL)
-Detailed instructions on how to connect to the 5G base station using the QMI interface is presented [here](https://docs.sixfab.com/page/setting-up-a-data-connection-over-qmi-interface-using-libqmi)
+Detailed instructions on how to connect to the 5G base station using the QMI interface are presented [here](https://docs.sixfab.com/page/setting-up-a-data-connection-over-qmi-interface-using-libqmi)
 
 # HOW TO PREPARE SERVER OR CLIENT APPLICATION
 - Go to the 'source' folder,
@@ -50,9 +50,9 @@ To design the client application:
 From the 'build' folder run 'sudo ./iec61850' on LINUX or 'iec61850' on WINDOWS. Run the server application first and after that the client.
 
 # HOW TO INTERPRET THE RESULTS
-Whenever the client application is started, it spits out one RGOOSE message. When the server application receives the RGOOSE message it tries to calculate its time latency and, if the attempt is successful, prints the results in seconds. It is the user's responsibility to be sure that two devices (server and client) are properly time synchronized and that the communication line between them is stable and robust. Otherwise, the latency test will be incorrect.
+Whenever the client application is started, it spits out one RGOOSE message. When the server application receives the RGOOSE message it tries to calculate its time latency and, if the attempt is successful, prints the results in seconds. It is the user's responsibility to be sure that the two devices (server and client) are properly time synchronized and that the communication line between them is stable and robust. Otherwise, the latency test will be incorrect.
 
-# 5G latency test, step-by-step instruction for Raspberry Pi 4
+# 5G latency test. Step-by-step instructions for Raspberry Pi 4
 1. Update the package index: sudo apt-get update
 2. Install cmake: sudo apt-get install cmake
 3. Install libboost libraries: sudo apt-get install libboost-all-dev
