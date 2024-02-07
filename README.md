@@ -69,13 +69,13 @@ Whenever the client application is started, it spits out one RGOOSE message. Whe
 12. On the device that is going to be a server/subscriber during the latency test check the IP address: ifconfig wwan0
 13. In the "iec61850_rpi_release" directory, go to the "source" directory: cd source
 14. Open the 'main.cpp' file: sudo nano main.cpp
-   - To design the server application: uncomment the 'LINUX/WINDOWS R-GOOSE SUBSCRIBER EXAMPLE' section (section 'LINUX/WINDOWS R-GOOSE PUBLISHER EXAMPLE' should be commented out).
-   - To design the client application: uncomment the 'LINUX/WINDOWS R-GOOSE PUBLISHER EXAMPLE' section (section 'LINUX/WINDOWS R-GOOSE SUBSCRIBER EXAMPLE' should be commented out). Specify the IP address of the server (the one that was shown in step 12). For that, 
-     change the second argument in the 'iec61850_publisher' function in line 36. Do not change the port number.
+   - To design the server/subscriber application: uncomment the 'LINUX/WINDOWS R-GOOSE SUBSCRIBER EXAMPLE' section (section 'LINUX/WINDOWS R-GOOSE PUBLISHER EXAMPLE' should be commented out).
+   - To design the client/publisher application: uncomment the 'LINUX/WINDOWS R-GOOSE PUBLISHER EXAMPLE' section (section 'LINUX/WINDOWS R-GOOSE SUBSCRIBER EXAMPLE' should be commented out). Specify the IP address of the server (the one that was shown in step 12). For 
+     that, change the second argument in the 'iec61850_publisher' function in line 36. Do not change the port number.
 15. In the "iec61850_rpi_release" directory, change the directory to build: cd build
 16. Generate Makefile: cmake ..
 17. Generate binary file: make
 18. Run latency test on the server/subscriber (If the server starts successfully the application prints "Server started..."): sudo ./iec61850
 19. Run latency test on the client/publisher: sudo ./iec61850
-20. The server/subscriber application should print out the latency value of the package that has been sent (value printed in seconds)
+20. The server/subscriber application should print out the latency value of the package that has been received (value printed in seconds)
 21. To run a series of latency tests, the server should be run once, but the "iec61850_publisher" function in the client/publisher application should be called in the loop as many times as needed.
