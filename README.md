@@ -59,6 +59,10 @@ Whenever the client application is started, it spits out one RGOOSE message. Whe
 4. Install ptpd deb package: `sudo apt-get install ptpd`
    - To run ptpd in master mode : `sudo ptpd -i eth0 -E -M`
    - To run ptpd in slave mode: `sudo ptpd -i eth0 -E -S`
+
+>[!NOTE]
+> ptpd runs on eth0 interface. You need a dedicated ethernet connection between RPis for clock sync to work.
+
 5. In the "iec61850_rpi_release" directory, create new "build" directory: `sudo mkdir build`
 6. Connect USB 5G modem with Raspberry Pi 4 (do that for both client/publisher and server/subscriber devices).
 7. Disable "wwan0" interface: `sudo ip link set wwan0 down`
