@@ -22,6 +22,7 @@ Mandatory:
    - make sure that "path_to_MSYS\msys64\mingw64\include" folder is added
    - make sure that "path_to_MSYS\msys64\usr\bin" folder is added
    - make sure that "path_to_CMAKE\CMake\bin" folder is added
+   - make sure that all three paths above are higher than "%SystemRoot%\system32"
 
 Optional:
 - Install PTP server/client (one alternative is presented [here](https://timemachinescorp.com/wp-content/uploads/Windows10PTPClient.pdf)).
@@ -43,8 +44,8 @@ To design the client application:
 # HOW TO BUILD
 1. Open the command line (terminal)
 2. Change the directory to the '{platform name}_release and create a new 'build' folder.
-3. From the 'build' folder, run `cmake ..` for LINUX or `cmake .. -G "MSYS Makefiles"` for WINDOWS. Wait while the compilation is over.
-4. run `make`
+3. From the 'build' folder, run `sudo cmake ..` for LINUX or `cmake .. -G "MSYS Makefiles"` for WINDOWS. Wait while the compilation is over.
+4. run `sudo make` for LINUX or `make` for WINDOWS.
 
 # HOW TO RUN
 From the 'build' folder run `sudo ./iec61850` on LINUX or `iec61850` on WINDOWS. Run the server application first and after that the client.
@@ -77,8 +78,8 @@ Whenever the client application is started, it spits out one RGOOSE message. Whe
    - To design the client/publisher application: uncomment the 'LINUX/WINDOWS R-GOOSE PUBLISHER EXAMPLE' section (section 'LINUX/WINDOWS R-GOOSE SUBSCRIBER EXAMPLE' should be commented out). Specify the IP address of the server (the one that was shown in step 12). For 
      that, change the second argument in the 'iec61850_publisher' function in line 36. Do not change the port number.
 15. In the "iec61850_rpi_release" directory, change the directory to build: `cd build`
-16. Generate Makefile: `cmake ..`
-17. Generate binary file: `make`
+16. Generate Makefile: `sudo cmake ..`
+17. Generate binary file: `sudo make`
 18. Run latency test on the server/subscriber (If the server starts successfully the application prints "Server started..."): `sudo ./iec61850`
 19. Run latency test on the client/publisher: `sudo ./iec61850`
 20. The server/subscriber application should print out the latency value of the package that has been received (value printed in seconds)
